@@ -133,4 +133,4 @@ gridExtra::grid.arrange(grobs = plt_list)
 
 ### Predictions 
 
-The Spreadsheet can be found at the link : 
+The Spreadsheet can be found at the link : https://github.com/jey1987/DATA-624/blob/main/Project1/Predictions_Jey_624_Project1.xlsx
