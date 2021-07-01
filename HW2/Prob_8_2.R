@@ -1,0 +1,12 @@
+library(caret)
+library(rpart)
+set.seed(755)
+X1 <- rep(1:2, each=100)
+Y <- X1 + rnorm(600, mean=2, sd=4)
+set.seed(755)
+X2 <- rnorm(600, mean=2, sd=4)
+simData <- data.frame(Y=Y, X1=X1, X2=X2)
+set.seed(624)
+fit <- rpart(Y ~ ., data = simData)
+varImp(fit)
+
