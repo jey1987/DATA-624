@@ -47,8 +47,8 @@ reg_train = regressor.predict(train_x)
 
 print("SVR Train RMSE: %.2f"
       % np.sqrt(mean_squared_error(train_y, reg_train)))
-
 regressor.coef_[0]
+
 out=f_importances(regressor.coef_[0], ['X1','X2','X3','X4','X5','X6','X7','X8','X9','X10'])
 
 

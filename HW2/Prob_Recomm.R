@@ -6,8 +6,8 @@ df <- read.csv("GroceryDataSet.csv")
 df_sparse <- read.transactions("GroceryDataset.csv",format="basket",sep=",")
 summary(df_sparse)
 
-
 itemFrequencyPlot(df_sparse,topN=20,type="absolute",col=brewer.pal(8,'Pastel2'), main="Frequently Purchased Products")
+
 
 association.rules <- apriori(df_sparse, parameter = list(supp=0.004, conf=0.3))
 
